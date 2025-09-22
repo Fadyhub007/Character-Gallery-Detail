@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Gallery</title>
+  <link rel="stylesheet" href="./assets/css/css.css">
+</head>
+<body>
+<main>
+  <div class="container">
+    <h1>Character Gallery</h1>
+    <!-- create form -->
+    <form id="characterForm">
+      <label>Type:</label>
+    
+      <!-- create drop down menu -->
+      <select id="type">
+        <option value="">Choose type</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Human">Human</option>
+      </select>
+
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Description:</label>
+      <textarea id="description" rows="3"></textarea>
+
+      <label>Image URL:</label>
+      <input type="text" id="imgUrl" name="imgUrl" required placeholder="./assets/images/dragon.png" />
+
+      <button type="submit">Add Character</button>
+    </form>
+
+    <div class="gallery" id="gallery"></div>
+  </div>
+</main>
+  <script src="./assets/js/gallery.js"></script>
+</body>
+</html>

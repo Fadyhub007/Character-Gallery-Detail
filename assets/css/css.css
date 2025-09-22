@@ -1,0 +1,77 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #FFD700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Container box */
+.container {
+  background: #444;
+  padding: 20px;
+  border-radius: 12px;
+  width: 500px;
+  text-align: center;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+/* Inputs, selects, textareas */
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  background: #FFFACD;
+}
+
+/* Button */
+button {
+  background: #FFD700;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e6c200;
+}
+
+/* Gallery grid */
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+/* Character card */
+.card {
+  background: #333;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card h3 {
+  margin: 5px 0;
+}

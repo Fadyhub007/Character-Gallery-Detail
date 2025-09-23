@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Detail</title>
+  <link rel="stylesheet" href="./assets/css/css2.css">
+</head>
+<body>
+<main>
+  <div class="container">
+    <h1>Character Detail</h1>
+    <div id="characterDetails"></div>
+
+    <h2>Bag Items</h2>
+    <ul id="bagList"></ul>
+
+    <h2>Add Item to Bag</h2>
+    <form id="itemForm">
+      <label>Item Type:</label>
+      
+      <select id="itemType" required>
+        <option value="">Choose type</option>
+        <option value="Rune">Rune</option>
+        <option value="Weapon">Weapon</option>
+        <option value="Potion">Potion</option>
+      </select>
+
+      <label>Item Name:</label>
+      <input type="text" id="itemName" required>
+
+      <button type="submit">Add Item</button>
+    </form>
+    <br>
+    <a href="index.html">⬅ Back to Gallery</a>
+  </div>
+  
+</main>
+  <script src="./assets/js/detail.js"></script>
+</body>
+</html>

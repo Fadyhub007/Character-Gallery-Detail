@@ -15,7 +15,7 @@ function saveCharacters(characters) {
 function renderGallery() {
   const characters = getCharacters();
   gallery.innerHTML = '';
-  characters.forEach((character) => {
+  characters.forEach((character, idx) => {
     const card = document.createElement('div');
     card.className = 'character-card';
     card.innerHTML = `
@@ -24,6 +24,11 @@ function renderGallery() {
       <h2>${character.name}</h2>
       <div class="description">${character.description}</div>  
     `;
+    card.addEventListener("click", () => {
+      sessionStorage.setItem("selectedCharacterIdx", idx);
+      window.location.href = "details.html";
+    });
+
     gallery.appendChild(card);
   });
 }

@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+    font-family: Arial, sans-serif;
+    background: #222; /* Dark background from css.css */
+    color: #FFD700; /* Gold text from css.css */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    background: #444; /* Dark container background from css.css */
+    padding: 20px;
+    border-radius: 12px;
+    width: 900px; /* Increased width to be more flexible */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 15px;
+    color: #FFD700; /* Gold heading color */
+}
+
+/* Character Gallery Cards */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.character-card {
+    background: #333; /* Dark card background from css.css */
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-card h2 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #FFD700;
+}
+
+.character-card .description {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter text for description */
+}
+
+/* Character Detail Page */
+#characterDetails {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#characterDetails img {
+    max-width: 250px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+#bagList {
+    margin: 10px 0 20px;
+    list-style: none;
+    text-align: left;
+}
+
+#bagList li {
+    background: #555; /* Slightly lighter dark background for list items */
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #666;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form select,
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+    background: #FFFACD; /* Light background for inputs */
+    color: #333;
+}
+
+form button {
+    background: #FFD700; /* Gold button background from css.css */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #e6c200; /* Darker gold hover effect from css.css */
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #FFD700; /* Gold link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.character-card-big {
+    background: #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.character-card-big img {
+    max-width: 250px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.character-card-big h2 {
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.character-card-big p {
+    margin: 5px 0 15px;
+    color: #ccc;
+}
